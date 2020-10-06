@@ -1,0 +1,91 @@
+body {
+  height: 960px;
+  font-family: "Times New Roman", Times, serif;
+}
+.Header {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-image: repeating-linear-gradient(
+    90deg,
+    pink 0% 7.33%,
+    white 7.33% 8.33%
+  );
+}
+.box {
+  display: flex;
+  height: 420px;
+}
+#mainbox1 {
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+#mainbox1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  text-align: center;
+}
+#paragraph1 {
+  font-size: 11pt;
+  font-weight: 500;
+  color: #3a3a3a;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+#paragraph2 {
+  font-size: 36pt;
+  color: #27b4b6;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+#paragraph3 {
+  font-size: 13pt;
+  color: #685c5c;
+  opacity: 0.8;
+  margin-top: 0;
+}
+#mainbox2 {
+  height: 420x;
+  flex-direction: row;
+}
+.inbox {
+  width: 24.8%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.inbox-title {
+  font-size: 21pt;
+}
+.inbox-text {
+  font-size: 11pt;
+  color: #777777;
+  opacity: 0.8;
+}
+.inbox:hover {
+  background-color: rgba(0, 110, 255, 0.6);
+  color: white;
+}
+.inbox:hover .inbox-text {
+  color: white;
+}
+.inbox:hover path {
+  fill: rgb(255, 255, 255);
+}
+.inbox:active {
+  color: rgb(255, 0, 0);
+  background-color: rgba(0, 38, 255, 0.6);
+}
+.inbox:active path {
+  fill: rgb(255, 0, 0);
+}
+.inbox:active .inbox-text {
+  color: rgb(255, 0, 0);
+}
